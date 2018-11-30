@@ -1,0 +1,200 @@
+*, *:before, *:after { /*mandatory thing*/
+  box-sizing: border-box;
+}
+
+body { /*body*/
+  background-color: white;
+  font-size: 12px;
+  margin: auto;
+}
+
+.container { /*iOS size*/
+  margin: 0 auto;
+  width: 375px;
+  height: 667px;
+  background-color: #efeff4;
+}
+
+h2 { /* text Eastbound, Northbound, etc.*/
+  font-size: .9em;
+  font-family: sans-serif;
+  color: #898989;
+  margin-left: -10px;
+}
+
+h4 { /*Line, Destination, Frequency*/
+  font-size: 1.35em;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: #efeff4;
+  line-height: 50px;
+}
+
+h5 { /*Contents under each heading*/
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #3d3d3d;
+  line-height: 32.5px;
+}
+
+.map img { /*just the circle and star*/
+  padding-top: 5px;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.map p { /*words left top corner map*/
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #898989;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.ios-nav { /*very tip top*/
+  background-color: #898989;
+  height: 20px;
+  width: 375px;
+  position: inherit;
+}
+
+.blue-container {
+  background-color: #1969bb;
+  height: 50px;
+}
+
+.eastbound, .southbound, .outOfService { /*alternating background colors*/
+  height: 65px;
+  width: 100%;
+  padding-top: 10px;
+  background-color: #ddd;
+}
+
+.northbound, .reroute { /*alternating background colors*/
+  height: 65px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.eastbound:hover { /*change color with hover*/
+    background-color: #7AC56F;
+}
+
+.eastbound:hover h5 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.eastbound:hover h2 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.northbound:hover { /*change color with hover*/
+    background-color: #7AC56F;
+}
+
+.northbound:hover h5 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.northbound:hover h2 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.southbound:hover { /*change color with hover*/
+    background-color: #7AC56F;
+}
+
+.southbound:hover h5 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.southbound:hover h2 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.reroute:hover { /*change color with hover*/
+    background-color: #7AC56F;
+}
+
+.reroute:hover h5 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.reroute:hover h2 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.outOfService:hover { /*change color with hover*/
+    background-color: #E44E46;
+}
+
+.outOfService:hover h5 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.outOfService:hover h2 { /*change text color with hover*/
+    color: #efeff4;
+}
+
+.line { /*line*/
+  width: 23%;
+  display: inline-block;
+  margin-right: -3px;
+  padding-left: 20px;
+}
+
+.destination {
+  width: 42%;
+  display: inline-block;
+  margin-right: -3px;
+}
+
+.frequency {
+  width: 35%;
+  display: inline-block;
+}
+
+.map { /*image of chicago map*/
+  background-image: url("chicago-map.png");
+  background-position: right;
+  width: 100%;
+  height: 228px;
+  position: relative;
+}
+
+.navbar-top { /*div for Washington x State*/
+  background-color: #898989;
+  height: 44px;
+  width: 375px;
+  position: relative;
+}
+
+h3 { /*"back"*/
+  text-align: center;
+  line-height: 44px;
+  font-size: 1.35em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #efeff4;
+  display: inline-block;
+  margin: auto;
+  width: 68%;
+}
+
+h6 { /*"Wash x State"*/
+  text-align: left;
+  line-height: 44px;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  color: #efeff4;
+  display: inline-block;
+}
+
+.navbar-top img { /*img in div holding wash x state*/
+  width: auto;
+  height: 20px;
+  padding-left: 10px;
+  display: inline-block;
+}
