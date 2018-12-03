@@ -9,70 +9,72 @@
   </head>
     <body>
       <div class="container">
-        <div class="ios-nav">
-          <img src="images/ios-nav.png" alt="ios navigation bar top">
-        </div>
-        <div class="navbar-top">
+        <section class="statusbar">
+          <img src="images/ios-nav.png" alt="ios statusbar top">
+        </section>
+        <nav>
           <i class="fas fa-chevron-left"></i>
-          <h6>Back</h6>
-          <h3>Washington x State</h3>
+          <h5>Back</h5>
+          <h1>Washington x State</h1>
           <img src="images/busybuslogo.png" alt="logo">
           <i class="fas fa-ellipsis-v"></i>
-        </div>
+        </nav>
         <div class="map">
           <img src="images/circle.png" alt="bus location"><p>Bus location</p><br><img src="images/star.png" alt="bus stop"><p>Bus stop</p>
         </div>
         <div class="blue-container">
-          <div class="line"><h4>Bus</h4></div>
-          <div class="destination"><h4>Destination</h4></div>
-          <div class="frequency"><h4>Arriving</h4></div>
+          <ul class="categories">
+            <li class="line"><h3>Bus</h3></li>
+            <li class="destination"><h3>Destination</h3></li>
+            <li class="frequency"><h3>Arriving</h3></li>
+          </ul>
         </div>
-        <div class="southbound">
-          <div class="line"><h2>Southbound</h2><h5>124</h5></div>
-          <div class="destination"><h5>Navy Pier</h5></div>
-          <div class="frequency"><h2>Every 10 min</h2><h5>9 min</h5></div>
-        </div>
-        <div class="eastbound">
-          <div class="line"><h2>Eastbound</h2><h5>124</h5></div>
-          <div class="destination"><h5>Navy Pier</h5></div>
-          <div class="frequency"><h2>Every 10 min<h5>9 min<br></h5></div>
-        </div>
-        <div class="southbound">
-          <div class="line"><h2>Southbound</h2><h5>J14</h5></div>
-          <div class="destination"><h5>103/Stony Island</h5></div>
-          <div class="frequency"><h2>Every 15 min</h2><h5>14 min</div>
-        </div>
-        <div class="northbound">
-          <div class="line"><h2>Northbound</h2><h5>151</h5></div>
-          <div class="destination"><h5>Devon/Clark</h5></div>
-          <div class="frequency"><h2>Every 16 min</h2><h5>15 min</h5></div>
-        </div>
-        <div class="eastbound">
-          <div class="line"><h2>Eastbound</h2><h5>60</h5></div>
-          <div class="destination"><h5>Randolph/Harbor Dr</h5></div>
-          <div class="frequency"><h2>Every 20 min<h5>19 min<br></h5></div>
-        </div>
-        <div class="reroute">
-          <div class="line"><h2>Reroute</h2><h5>6x</h5></div>
-          <div class="destination"><h5>Jackson Park Express</h5></div>
-          <div class="frequency"><h5>N/A</h5></div>
-        </div>
-        <div class="outOfService">
-          <div class="line"><h2>Out of Service</h2><h5>4</h5></div>
-          <div class="destination"><h5>Cottage Grove</h5></div>
-          <div class="frequency"><h2>Resumes</h2><h5>12:10AM</h5></div>
-        </div>
-        <div class="outOfService">
-          <div class="line"><h2>Out of Service</h2><h5>20</h5></div>
-          <div class="destination"><h5>Madison</h5></div>
-          <div class="frequency"><h2>Resumes</h2><h5>12:10AM</h5></div>
-        </div>
-        <div class="outOfService">
-          <div class="line"><h2>Out of Service</h2><h5>157</h5></div>
-          <div class="destination"><h5>Streeterville/Taylor</h5></div>
-          <div class="frequency"><h2>Resumes</h2><h5>6:00AM</h5></div>
-        </div>
-        </div>
+        <div class="list">
+          <ul class="row">
+            <li class="line"><h2>Southbound</h2><h4>124</h4></li>
+            <li class="destination"><h4>Navy Pier</h4></li>
+            <li class="frequency"><h2>Every 10 min</h2><h4>9 min</h4></li>
+          </ul>
+        <ul class="row">
+          <li class="line"><h2>Eastbound</h2><h4>124</h4></li>
+          <li class="destination"><h4>Navy Pier</h4></li>
+          <li class="frequency"><h2>Every 10 min<h4>9 min<br></h4></li>
+        </ul>
+        <ul class="row">
+          <li class="line"><h2>Southbound</h2><h4>J14</h4></li>
+          <li class="destination"><h4>103/Stony Island</h4></li>
+          <li class="frequency"><h2>Every 15 min</h2><h4>14 min</h4></li>
+        </ul>
+        <ul class="row">
+          <li class="line"><h2>Northbound</h2><h4>151</h4></li>
+          <li class="destination"><h4>Devon/Clark</h4></li>
+          <li class="frequency"><h2>Every 16 min</h2><h4>15 min</h4></li>
+        </ul>
+        <ul class="row">
+          <li class="line"><h2>Eastbound</h2><h4>60</h4></li>
+          <li class="destination"><h4>Randolph/Harbor Dr</h4></li>
+          <li class="frequency"><h2>Every 20 min</h2><h4>19 min</h4></li>
+        </ul>
+        <ul class="reroute">
+          <li class="line"><h2>Reroute</h2><h4>6x</h4></li>
+          <li class="destination"><h4>Jackson Park Express</h4></li>
+          <li class="frequency"><h2>Not Available</h2><h4>---</h4></li>
+        </ul>
+        <ul class="outOfService">
+          <li class="line"><h2>Out of Service</h2><h4>4</h4></li>
+          <li class="destination"><h4>Cottage Grove</h4></li>
+          <li class="frequency"><h2>Resumes</h2><h4>12:10AM</h4></li>
+        </ul>
+        <ul class="outOfService">
+          <li class="line"><h2>Out of Service</h2><h4>20</h4></li>
+          <li class="destination"><h4>Madison</h4></li>
+          <li class="frequency"><h2>Resumes</h2><h4>12:10AM</h4></li>
+        </ul>
+        <ul class="outOfService">
+          <li class="line"><h2>Out of Service</h2><h4>157</h4></li>
+          <li class="destination"><h4>Streeterville/Taylor</h4></li>
+          <li class="frequency"><h2>Resumes</h2><h4>6:00AM</h4></li>
+        </ul>
       </div>
     </div>
   </body>

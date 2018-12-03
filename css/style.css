@@ -1,4 +1,4 @@
-*, *:before, *:after { /*mandatory thing*/
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@ body { /* body */
   margin: auto;
 }
 
-.blue-container { /* div holding Bus, Destination, Arriving */
+.blue-container { /* Bus, Destination, Arriving */
   background-color: #1969bb;
   height: 50px;
   width: auto;
@@ -21,14 +21,7 @@ body { /* body */
   background-color: #efeff4;
 }
 
-h2 { /* words Eastbound, Northbound, Southbound, Reroute, Out of Service */
-  font-size: .9em;
-  font-family: sans-serif;
-  color: #efeff4;
-  opacity: 0.5;
-}
-
-h3 { /* "Back" */
+h1 { /* Washington x State */
   text-align: center;
   line-height: 44px;
   font-size: 1.35em;
@@ -40,7 +33,14 @@ h3 { /* "Back" */
   width: 68%;
 }
 
-h4 { /* Bus, Destination, Arriving */
+h2 { /* Eastbound, Northbound, Southbound, Reroute, Out of Service */
+  font-size: .9em;
+  font-family: sans-serif;
+  color: #efeff4;
+  opacity: 0.5;
+}
+
+h3 { /* Bus, Destination, Arriving */
   font-size: 1.4em;
   font-weight: bolder;
   font-family: sans-serif;
@@ -48,13 +48,21 @@ h4 { /* Bus, Destination, Arriving */
   line-height: 50px;
 }
 
-h5 { /* Contents under each heading */
+h4 { /* Contents under each heading */
   font-size: 1.15em;
   font-family: sans-serif;
   font-weight: bold;
   color: #efeff4;
   line-height: 10px;
   padding-top: 4px;
+}
+
+h5 { /* "Back" */
+  text-align: left;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  color: #efeff4;
+  display: inline-block;
 }
 
 .map img { /* just the circle and star */
@@ -72,14 +80,14 @@ h5 { /* Contents under each heading */
   display: inline-block;
 }
 
-.ios-nav { /* very tip top */
+.statusbar { /* very tip top */
   background-color: #898989;
   height: 20px;
   width: 375px;
   position: inherit;
 }
 
-.eastbound, .southbound, .northbound { /* green backgrounds */
+.row { /* green backgrounds */
   height: 39px;
   width: 365px;
   background-color: #2DC84D;
@@ -114,13 +122,13 @@ h5 { /* Contents under each heading */
 }
 
 .destination { /* Destination */
-  width: 45%;
+  width: 48%;
   display: inline-block;
   margin-right: -3px;
 }
 
 .frequency { /* Arriving */
-  width: 30%;
+  width: 27%;
   display: inline-block;
 }
 
@@ -132,22 +140,14 @@ h5 { /* Contents under each heading */
   position: relative;
 }
 
-.navbar-top { /* div for Washington x State */
+nav { /* Washington x State nav*/
   background-color: #898989;
   height: 44px;
   width: 375px;
   position: relative;
 }
 
-.navbar-top h6 { /* words "Wash x State" */
-  text-align: left;
-  font-size: 1.1em;
-  font-family: sans-serif;
-  color: #efeff4;
-  display: inline-block;
-}
-
-.navbar-top img { /* images in div holding wash x state */
+nav img { /* images in div holding wash x state */
   width: auto;
   height: 18px;
   padding-left: 10px;
