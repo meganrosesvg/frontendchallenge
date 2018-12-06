@@ -8,7 +8,7 @@ body { /* body */
   margin: auto;
 }
 
-.blue-container { /* Bus, Destination, Arriving */
+.blue-bar { /* Bus, Destination, Arriving */
   background-color: #1969bb;
   height: 50px;
   width: auto;
@@ -80,17 +80,19 @@ h5 { /* "Back" */
   display: inline-block;
 }
 
-.statusbar { /* very tip top */
-  background-color: #898989;
-  height: 20px;
-  width: 375px;
-  position: inherit;
-}
-
-.row { /* green backgrounds */
+.on-schedule { /* green backgrounds */
   height: 39px;
   width: 365px;
   background-color: #2DC84D;
+  border-radius: 19px;
+  padding-top: 2px;
+  margin: 5px 2.5px 5px 5px;
+}
+
+.out-of-service { /* different background color to signify out of service */
+  height: 39px;
+  width: 365px;
+  background-color: #F93822;
   border-radius: 19px;
   padding-top: 2px;
   margin: 5px 2.5px 5px 5px;
@@ -105,13 +107,12 @@ h5 { /* "Back" */
   margin: 5px 2.5px 5px 5px;
 }
 
-.outOfService { /* different background color to signify out of service */
-  height: 39px;
-  width: 365px;
-  background-color: #F93822;
-  border-radius: 19px;
-  padding-top: 2px;
-  margin: 5px 2.5px 5px 5px;
+
+.statusbar { /* very tip top */
+  background-color: #898989;
+  height: 20px;
+  width: 375px;
+  position: inherit;
 }
 
 .line { /* Bus */
@@ -154,9 +155,9 @@ nav img { /* images in div holding wash x state */
   display: inline-block;
 }
 
-i {
+i { /*icons*/
   padding-left: 10px;
   font-size: 1.7em;
   color: #efeff4;
-  position: inline-block;
+  display: inline-block;
 }
